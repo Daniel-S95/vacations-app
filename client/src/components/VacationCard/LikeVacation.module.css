@@ -1,0 +1,11 @@
+.add-to-favorites__container {
+    margin: 0 auto;
+}
+
+.add-to-favorites__button {
+    color: black;
+}
+
+.add-to-favorites__selected {
+    color: red;
+}

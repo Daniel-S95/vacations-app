@@ -1,0 +1,19 @@
+.input-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.input-label {
+    font-size: 1.15rem;
+    margin-bottom: 2px;
+}
+
+.input-restriction {
+    font-size: 0.87rem;
+    color: rgb(100, 100, 100);
+    margin-top: 5px;
+}

@@ -1,0 +1,29 @@
+.company-slogan {
+    margin-left: 50px;
+}
+
+.nav-bar {
+    min-height: 51px;
+}
+
+.user-info {
+    display: none;
+}
+
+@media (min-width:992px) {
+    .navbar-right {
+        margin-right: 50px;
+    }
+
+    .right-navbar {
+        margin-left: auto;
+        padding-right: 20px;
+    }
+
+    .user-info {
+        color: white;
+        margin: 0px 20px;
+        font-size: 1.2rem;
+        display: inline-flex;
+    }
+}

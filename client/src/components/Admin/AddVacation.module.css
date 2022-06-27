@@ -1,0 +1,75 @@
+.add-vacation-page {
+    color: rgb(50, 50, 50);
+    padding-top: 80px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.not-a-member {
+    display: block;
+    color: rgb(137, 135, 146);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.register-label {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.divider {
+    background-color: #39c7ff;
+    border: 0px !important;
+    height: 1px !important;
+}
+
+@media (min-width:320px) {
+    .add-vacation-container {
+        margin: 0 auto;
+        padding: 20px;
+        width: 95% !important;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #8ae5ff;
+    }
+
+    .flex-container-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .flex-item {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media (min-width:641px) {
+    .flex-container-row {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .flex-item {
+        width: 50%;
+    }
+
+    .add-vacation-container {
+        width: 600px !important;
+    }
+}

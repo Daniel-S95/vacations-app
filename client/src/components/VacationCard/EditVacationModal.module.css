@@ -1,0 +1,35 @@
+.modal-body-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.preview-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (min-width:320px) {
+    .vacation-preview {
+        display: none;
+    }
+
+    .modal-inner-items {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width:1020px) {
+    .vacation-preview {
+        display: block;
+    }
+
+    .modal-inner-items {
+        width: 50%;
+    }
+}

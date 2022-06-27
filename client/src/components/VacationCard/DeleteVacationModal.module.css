@@ -1,0 +1,9 @@
+div>.my-modal {
+    max-width: max-content;
+}
+
+@media (min-width:641px) {
+    .padding {
+        padding: 20px 60px !important;
+    }
+}

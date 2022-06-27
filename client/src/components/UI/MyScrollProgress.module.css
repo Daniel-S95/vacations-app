@@ -1,0 +1,5 @@
+.scroll-bar {
+    position: fixed;
+    z-index: 999;
+    margin-top: 50px;
+}

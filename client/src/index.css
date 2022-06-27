@@ -1,0 +1,42 @@
+html, body {
+  background-image: linear-gradient(132.6deg, #75cde7 23.3%, #22a1bd 84.7%);
+  /* background-image: linear-gradient(132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%); */
+  /* background: rgb(174, 238, 187);
+  background: linear-gradient(22deg, rgba(174, 238, 187, 1) 0%, rgba(162, 222, 236, 1) 47%, rgba(148, 233, 212, 1) 100%); */
+
+  height: 100%;
+  position: relative;
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: max-content;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCD6A5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F0984A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9772F;
+}
