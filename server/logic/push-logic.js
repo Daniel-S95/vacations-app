@@ -49,9 +49,6 @@ function broadcast(actionName, data) {
             socket.emit(actionName, data);
         }
         catch (e) {
-            // Intentionally swallowing the exception
-            // Preventing a situation where an error with the 2nd socket, will prevent
-            // sending to the 3rd, fourth etc. 
             console.error(e)
         }
 

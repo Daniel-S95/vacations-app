@@ -1,9 +1,5 @@
 html, body {
   background-image: linear-gradient(132.6deg, #75cde7 23.3%, #22a1bd 84.7%);
-  /* background-image: linear-gradient(132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%); */
-  /* background: rgb(174, 238, 187);
-  background: linear-gradient(22deg, rgba(174, 238, 187, 1) 0%, rgba(162, 222, 236, 1) 47%, rgba(148, 233, 212, 1) 100%); */
-
   height: 100%;
   position: relative;
 

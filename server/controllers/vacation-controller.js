@@ -9,7 +9,6 @@ router.post("/", async (request, response) => {
         const vacationDetails = request.body;
         const vacationId = await vacationsLogic.addVacation(vacationDetails);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(vacationId);
     }
 
@@ -31,7 +30,6 @@ router.get("/", async (request, response) => {
 
         const vacations = await vacationsLogic.getAllVacations(userId);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(vacations);
     }
 
@@ -46,7 +44,6 @@ router.put("/:vacationId", async (request, response) => {
         const vacationData = request.body;
         const vacation = await vacationsLogic.updateVacation(vacationData);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(vacation);
     }
 
@@ -61,7 +58,6 @@ router.delete("/:vacationId", async (request, response) => {
         const vacationId = +request.params.vacationId;
         const vacation = await vacationsLogic.deleteVacation(vacationId);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(vacation);
     }
 

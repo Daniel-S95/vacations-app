@@ -18,7 +18,6 @@ router.post("/", async (request, response) => {
         likeDetails = { ...likeDetails, userId };
         await likedVacationLogic.likeVacation(likeDetails);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json();
     }
 
@@ -36,7 +35,6 @@ router.delete("/:userToken/:vacationId", async (request, response) => {
         dislikeDetails = { ...dislikeDetails, userId };
         await likedVacationLogic.dislikeVacation(dislikeDetails);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json();
     }
 
@@ -50,7 +48,6 @@ router.get("/", async (request, response) => {
     try {
         const vacationsData = await likedVacationLogic.getDataForChart();
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(vacationsData);
     }
 

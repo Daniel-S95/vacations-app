@@ -10,7 +10,6 @@ router.post("/", async (request, response, next) => {
         userRegistrationData = { ...userRegistrationData, userType: "USER" };
         await usersLogic.addUser(userRegistrationData);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json();
     }
 
@@ -27,7 +26,6 @@ router.post("/login", async (request, response, next) => {
     try {
         let successfulLoginResponse = await usersLogic.userLogin(userLoginData);
 
-        // YOU MUST RETURN A VALUE TO THE CLIENT, OR ELSE - IT WILL GET STUCK
         response.json(successfulLoginResponse);
     }
 
