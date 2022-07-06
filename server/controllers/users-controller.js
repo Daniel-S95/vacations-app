@@ -15,7 +15,7 @@ router.post("/", async (request, response, next) => {
 
     catch (e) {
         console.error(e);
-        response.status(600).send(e.message);
+        response.status(500).send(e.message);
         return next(e);
     }
 });
@@ -31,7 +31,7 @@ router.post("/login", async (request, response, next) => {
 
     catch (e) {
         console.error(e);
-        response.status(600).send(e.message);
+        response.status(500).send(e.message);
         return next(e);
     }
 });

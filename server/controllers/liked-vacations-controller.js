@@ -23,7 +23,7 @@ router.post("/", async (request, response) => {
 
     catch (e) {
         console.error(e);
-        response.status(600).send(e.message);
+        response.status(500).send(e.message);
     }
 });
 
@@ -40,7 +40,7 @@ router.delete("/:userToken/:vacationId", async (request, response) => {
 
     catch (e) {
         console.error(e);
-        response.status(600).send(e.message);
+        response.status(500).send(e.message);
     }
 });
 
@@ -53,7 +53,7 @@ router.get("/", async (request, response) => {
 
     catch (e) {
         console.error(e);
-        response.status(600).send(e.message);
+        response.status(500).send(e.message);
     }
 });
 
